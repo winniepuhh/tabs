@@ -1,0 +1,35 @@
+.tab {
+    padding: 10px 20px;
+    margin-right: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #f0f0f0;
+    border-radius: 5px 5px 0 0;
+    border: 1px solid #ccc;
+    border-bottom: none; /* Прибираємо нижню межу, щоб виглядало активним */
+    transition: background-color 0.3s ease;
+    display: inline-block;
+    min-width: 120px; /* Однаковий розмір для табів */
+    text-align: center;
+  }
+  
+  /* Активний таб */
+  .tab.active {
+    background-color: #fff;
+    border-color: #007bff;
+    color: #007bff;
+  }
+  
+  /* Закріплені таби */
+  .tab.pinned {
+    background-color: #007bff;
+    color: white;
+    cursor: not-allowed; /* Не можна перетягнути */
+  }
+  
+  /* Ховери для табів */
+  .tab:hover {
+    background-color: #e0e0e0;
+  }
+  
